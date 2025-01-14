@@ -128,8 +128,7 @@ def experiment_maker(groups, num_mice, day, first=False, eartag_info=None, group
             tabs.append(sg.Tab(name, [full_tab_layout]))
 
         # Making the window layout with a title on top, A section of the day and the buttons to save and export data
-        layout = [[sg.Push(), sg.Text(f"DSS Experiment Day {day}"), sg.Push(),
-                   sg.Button("", k="-Egg-", border_width=0, button_color="#64778d")],
+        layout = [[sg.Push(), sg.Text(f"DSS Experiment Day {day}"), sg.Push()],
                   [sg.Text("DSS/Water"), sg.Combo(['DSS', 'Water'], k="-DSS-", default_value='DSS'), sg.Push(), sg.Button('Save', k='-Save-'),
                    sg.Button('Export', k='-Generate-')],
                   [sg.HorizontalSeparator()],

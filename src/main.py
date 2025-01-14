@@ -60,7 +60,7 @@ while True:  # Infinite loop to have the GUI working until break is called
             # Making a quick window to get the information of how many mice each group has
             if utils.check_integer(groups):
                 # Running function to create the folders where to save the experiment
-                utils.create_folders(program_folder=program_folder,
+                experiment_file_folder, experiment_results_folder, experiment_folder_name = utils.create_folders(program_folder=program_folder,
                                      current_user=current_user)
                 group_keys = []
                 group_name_keys = []
@@ -150,10 +150,17 @@ while True:  # Infinite loop to have the GUI working until break is called
 # Handling the saving of the experiment file or creating the plots and csv files
 
     # Saving the information of each mice for the day
+  
+    # Checking if the experiment object exist  
     if event == '-Save-':
-        # Checking if the experiment object exist
+      try:
+        experiment
+      except NameError:
+        experiment_exist = False
+      else:
+        experiment_exist = True
 
-        if utils.experiment_exist():  # If experiment exist, adding information to existing Mouse Classes
+        if experiment_exist:  # If experiment exist, adding information to existing Mouse Classes
             # Boolean holder to revert to previous experiment file in case one of the mouse have issues
             error_happened = False
             # Saving the experiment before any changes in case an error happens
@@ -493,7 +500,14 @@ while True:  # Infinite loop to have the GUI working until break is called
     # Creating the csv file and the plots for the experiment
     if event == '-Generate-':
         # Verifying that an experiment was created
-        if utils.experiment_exist():
+        try:
+        experiment
+      except NameError:
+        experiment_exist = False
+      else:
+        experiment_exist = True
+
+        if experiment_exist:
             # Making the holder of all the dataframes
             dataframes = []
             # Looping per mice to get their information

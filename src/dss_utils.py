@@ -285,15 +285,6 @@ def make_none(value, weight = False):
             else:
                 return value
 
-# Function to check that the object experiment is in the environment
-def experiment_exist():
-    try:
-        global experiment
-    except NameError:
-        return False
-    else:
-        return True
-
 # Function to create the folders where to save the experiment
 def create_folders(program_folder, current_user):
     # Creating the folders to save the new experiment based on the date of creation
@@ -325,4 +316,5 @@ def create_folders(program_folder, current_user):
         os.makedirs(experiment_file_folder)
         os.makedirs(experiment_results_folder)
         os.makedirs(experiment_results_notes_folder)
+    return experiment_file_folder,experiment_results_folder,experiment_folder_name
 

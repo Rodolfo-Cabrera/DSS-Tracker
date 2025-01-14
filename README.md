@@ -22,7 +22,7 @@ Run .exe file.
 
 ## Individual Files
 
-Download the folder "Download" and generate a command file to open with Python.
+Download the folder "Download" and generate a command file to open with Python version 3.12.2.
 
 An example script on Windows would look like the following:
 ```

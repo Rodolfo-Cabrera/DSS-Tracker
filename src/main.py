@@ -688,23 +688,3 @@ while True:  # Infinite loop to have the GUI working until break is called
             window.close()
 
             window = sg.Window(title="DSS Tracker - by RICS", layout=return_layout)
-
-    # Handling the easter egg
-
-    if event == '-Egg-':
-        sg.popup("Congratulations, You found me!",
-                 "You deserve a Fun Fact:",
-                 "-When Nintendo wanted to translate the first game of the "
-                 "\'Xenoblade Chronicles Serie\' to English, Nintendo of America"
-                 " did not believe it was going to be successful and declined the offer to translate it.",
-                 "However, Nintendo of Europe agreed, and used British, Welsh, and Scottish "
-                 "voice actors to make the translation. The game was a success and they are "
-                 "currently 7 games in the Xenoblade Chronicles Serie, as of 2024.",
-                 "As a token of appreciation for trusting in the game, Nintendo continues "
-                 "to entrust Nintendo of Europe the English translation of these games-",
-                 "This is not the first bad called from Nintendo of America. "
-                 "But that is for another time and in another program.",
-                 "By the way, I think one of your mice left a \'present\' for you.",
-                 "Oh well, I overstayed my welcome. Click on OK and I will be on my way.",
-                 "",
-                 title="Programa hecho por Ismael Cabrera")

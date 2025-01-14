@@ -144,6 +144,7 @@ class Mouse:
                 self.picture = "15_loss.png"
             else:
                 score = 4
+                self.picture = "15_loss.png"
 
             # Doing DAI scoring
             # Verifying that the values provided are integers or floats

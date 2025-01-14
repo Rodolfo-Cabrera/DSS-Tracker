@@ -38,18 +38,24 @@ In both cases, please don't move the location of the files.
 
 After starting the DSS Tracker, a welcome window will appear.
 
+![Welcome Window](images/Welcome_window.png)
+
 The first time, only "New User" will be available. Clicking on it will prompt you to create a new user.
 
 Click on "New Experiment" and indicate how many groups your experiment will have.
 
 Afterward, indicate how many mice are in each group.
 
-You can optionally name each group (e.g., Control, Condition) and include the percentage of DSS used.
+![Group Window](images/Group_Window.png)
+
+You can optionally name each group (e.g., "Control" or "Condition") and include the percentage of DSS used.
 If you do not provide any of these values, default names (Group1, Group2, etc.) will be used, and the DSS value will be left empty.
 
 After indicating the amount of mice per group you have, the experiment window will appear. Each Group will have its own tab.
 
 On the first day (Day 0), you can indicate the Gender and Eartag (individual mice tracker). In the following days, this information will be shown but **won't be editable.**
+
+![Experiment Window](images/Experiment_window.png)
 
 Once finished, click on "Save" to save the experiment.
 The experiment will be saved inside a folder called "DSS Experiment" inside your user folder. By default, the experiment is saved with the date of creation.
@@ -63,6 +69,10 @@ The following day, select "Open Previous Experiment" and select your experiment 
 The folder should be in the same location as the main program: inside the DSS Experiment folder, under the user who created the experiment.
 The pathways should look like the following:
 folder_with_program/DSS Experiment/User_name/Folder_with_the_Experiment
+
+Add the new information and save to update your experiment
+
+
 
 ### Inside your experiment folder
 

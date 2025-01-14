@@ -1,5 +1,9 @@
 # DSS-Tracker
+
+<img align="right" width="140" height="95" src="images/DSS.png">
+
 User interface to track a DSS colitis experiment
+
 
 # Installation
 

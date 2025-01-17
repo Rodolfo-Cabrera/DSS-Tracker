@@ -4,7 +4,6 @@
 
 User interface to track a DSS colitis experiment
 
-
 # Installation
 
 ## About PySimpleGUI
@@ -24,6 +23,8 @@ Run .exe file.
 
 Download the folder "Download" and generate a command file to open with Python version 3.12.2.
 
+Install the dependencies in the version mentioned in the 'requirements.txt'
+
 An example script on Windows would look like the following:
 ```
 call activate env
@@ -40,7 +41,7 @@ After starting DSS Tracker, a welcome window will appear.
 
 ![Welcome Window](images/Welcome_window.png)
 
-The first time, only "New User" will be available. Clicking on it will prompt you to create an user.
+The first time, only "New User" will be available. Clicking on it will prompt you to create a user.
 
 Click on "New Experiment" and indicate how many groups your experiment will have.
 

@@ -6,12 +6,6 @@ User interface to track a DSS colitis experiment
 
 # Installation
 
-## About PySimpleGUI
-
-Since version 5, PySimpleGUI has a free (Hobbyist) and paid (Commercial) option. 
-
-Visit [PySimpleGUI GitHub](https://github.com/PySimpleGUI/PySimpleGUI) for more information and account creation. 
-
 ## Executable Option
 
 For Windows users, an executable with PyInstaller was made. 

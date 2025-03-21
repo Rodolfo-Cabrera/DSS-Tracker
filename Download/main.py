@@ -5,7 +5,7 @@ import pickle
 import pandas as pd
 import json
 import dss_utils as utils
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 from Mouse_Class import Mouse
 
 # Loading the User list

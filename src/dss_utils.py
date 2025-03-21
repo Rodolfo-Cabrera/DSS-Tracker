@@ -3,7 +3,7 @@ import re
 import os
 import pickle
 from datetime import datetime
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 
 
 # Function to create all the key labels used by PySimpleGUI based on the amount of groups and mice
